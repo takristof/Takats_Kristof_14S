@@ -23,5 +23,14 @@ function setFontColor(obj){
 function setBackgroundColor(obj){
     document.getElementById("input_szoveg").style.backgroundColor = obj.value;
 }
+var kedvencek = [];
+
+const hozzaAd = () => {
+  var valtozo = document.getElementById("szoveg").value;
+
+    kedvencek.push(valtozo)
+    document.getElementById("lista").innerHTML += `<li>${valtozo} </li>`
+
+}
 
   

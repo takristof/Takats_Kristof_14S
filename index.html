@@ -19,11 +19,13 @@
     <label for="backgroundcolor_szoveg">Háttérszín</label></br>
     <input type="color" id="backgroundcolor_szoveg" oninput="setBackgroundColor(this);" ></br>
     <input type="submit" value="Alaphelyzet"></form></br>
+    <button id="add" onclick="hozzaAd()">Kedvencek</button>
 
 </form>
 <div class="container">
     <h2>Előnézet:</h2>
     <p id="input_szoveg"></p>
+    <ul id="lista"></ul>
 </div>
 
 </body>
