@@ -23,14 +23,5 @@ function setFontColor(obj){
 function setBackgroundColor(obj){
     document.getElementById("input_szoveg").style.backgroundColor = obj.value;
 }
-var kedvencek=[]
-const hozzaAd = () => {
-    var szoveg = document.getElementById("szoveg").value;
-    var betumeret=document.getElementById("betumeret").value;
-    var fontcolor=document.getElementById("color_szoveg").value;
-    var backgroundcolor=document.getElementById("backgroundcolor_szoveg").value;
 
-    kedvencek.push(szoveg)
-      document.getElementById("lista").innerHTML += `<li><a style="background-color:document.getElementById("backgroundcolor_szoveg").value;">${szoveg}</a></li>`
-    }
   
