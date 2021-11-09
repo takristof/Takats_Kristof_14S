@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg form</title>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form name='registration'>
+    <label id="alert" for="szoveg">Mintaszöveg</label></br>
+    <input type="text" id="szoveg" name="name" onkeyup="getSzoveg(this);"></br>
+    <label for="betumeret">Betűméret</label></br>
+    <input type="number" id="betumeret" onkeyup="setMeret(this);"></br>
+    <label for="color_szoveg">Szövegszín</label></br>
+    <input type="color" id="color_szoveg" oninput="setFontColor(this);" ></br>
+    <label for="backgroundcolor_szoveg">Háttérszín</label></br>
+    <input type="color" id="backgroundcolor_szoveg" oninput="setBackgroundColor(this);" ></br>
+    <input type="submit" value="Alaphelyzet"></form></br>
+
+</form>
+<div class="container">
+    <h2>Előnézet:</h2>
+    <p id="input_szoveg"></p>
+</div>
+
+</body>
+</html>
